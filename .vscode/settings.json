@@ -1,0 +1,72 @@
+{
+    "files.exclude": {
+        // Root files 
+        ".editorconfig": true,
+        ".gitattributes": true,
+        "**/.gitignore": true,
+        ".styleci.yml": true,
+        "package.json": true,
+        "composer.json": true,
+        "composer.lock": true,
+        ".phpunit.result.cache": true,
+        "phpunit.xml": true,
+        // "README.md" : true,
+        "webpack.mix.js": true,
+        "artisan": true,
+        ".env.example": true,
+        "server.php": true,
+
+        //folders
+        "**/vendor": true,
+        "**/config" : true,
+        "**/tests" : true,
+        "**/database/factories": true,
+
+        //files in folders
+        "**/app/Console": true,
+        "**/app/Exceptions": true,
+        "**/app/Providers": true,
+        "**/bootstrap": true,
+
+        "**/routes/api.php": true,
+        "**/routes/channels.php": true,
+        "**/routes/console.php": true,
+
+        "**/resources/js": true,
+        "**/resources/lang": true,
+        "**/resources/sass": true,
+
+        "**/app/Http/Middleware" : true,
+        "**/app/Http/Kernel.php" : true,
+    },
+    "editor.fontSize": 16,
+
+    //exludes fies & folders in search indexing
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/env": true,
+        "**/venv": true
+    },
+
+    // Laravel Blade Snippets
+    "emmet.triggerExpansionOnTab": true,
+    "blade.format.enable": true,
+    "[blade]": {
+        "editor.autoClosingBrackets": "always"
+    },
+
+    // PHP intellisense
+    // "php.executablePath": "C:/xampp/php/php.exe",
+    // "php.suggest.basic": true,
+    // // Enable/disable built-in PHP validation.
+    // "php.validate.run": "onSave",
+    "php.validate.enable": true,
+    // // Whether the linter is run on save or on type.
+    // Add these settings to your VS Code's existing settings.json file (2020)
+
+    
+    "vscode-php-cs-fixer":{
+        "rules" :"@PSR2",
+    }
+}
